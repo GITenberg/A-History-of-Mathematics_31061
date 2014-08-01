@@ -1,0 +1,34 @@
+/* -*-ePiX-*- */
+#include "epix.h"
+using namespace ePiX;
+
+double lena(1), lenb(1.75), lenc(hypot(lena, lenb)), th(Atan(lena/lenb));
+
+int main()
+{
+  picture(P(0,0), P(2.75,1), "2.0625 x 0.75in");
+
+  begin();
+
+  screen scr1(P(0,0), P(lenc, lenc));
+  activate(scr1);
+  grid(1,1);
+  line(P(0,0), polar(lenb, th));
+  line(P(lenc,0), P(lenc,0) + polar(lenb, M_PI_2+th));
+  line(P(lenc,lenc), P(lenc,lenc) - polar(lenb, th));
+  line(P(0,lenc), P(0,lenc) - polar(lenb, M_PI_2+th));
+  deactivate(scr1);
+
+  screen scr2(P(0,0), P(lena + lenb, lenb));
+  activate(scr2);
+  rect(P(0,0), P(lenb, lena));
+  rect(P(lenb,0), P(lena+lenb, lenb));
+  rect(P(lena, lena), P(lenb, lenb));
+  deactivate(scr2);
+
+  inset(scr1, P(0,0), P(1,1));
+  inset(scr2, P(2.75, 0), P(2.75 - (lena + lenb)/lenc, lenb/lenc));
+
+  tikz_format();
+  end();
+}

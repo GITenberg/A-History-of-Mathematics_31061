@@ -1,0 +1,28 @@
+%% Generated from 069a.xp on Wed Dec 30 21:07:33 EST 2009 by
+%% ePiX-1.2.6
+%% 
+%%   Cartesian bounding box: [0,2.25] x [0,1]
+%%   Actual size: 2.25 x 1in
+%%   Figure offset: left by 0in, down by 0in
+%% 
+%% usepackages tikz
+%% 
+\xdefinecolor{rgb_000000}{rgb}{0,0,0}%
+\begin{tikzpicture}[cap=round]
+\pgfsetlinewidth{0.4pt}
+\useasboundingbox (0in,0in) rectangle (2.25in,1in);
+\draw (0.75in,1in)--(0in,0in)--(1.8in,0in)--(0.75in,1in)--cycle;
+\draw (2.25in,0.3in)--(0.3in,0.4in);
+\draw (2.25in,0.3in)--(0.075in,0.1in);
+\draw (0.75in,1in)--(1.30645in,0in);
+\pgftext[at={\pgfpoint{0.75in}{1.05535in}}] {\makebox(0,0)[b]{\hbox{\color{rgb_000000}\footnotesize $A$}}}
+\pgftext[at={\pgfpoint{-0.027674in}{0.027674in}}] {\makebox(0,0)[r]{\hbox{\color{rgb_000000}\footnotesize $B$}}}
+\pgftext[at={\pgfpoint{1.82767in}{0.027674in}}] {\makebox(0,0)[l]{\hbox{\color{rgb_000000}\footnotesize $C$}}}
+\pgftext[at={\pgfpoint{2.27767in}{0.3in}}] {\makebox(0,0)[l]{\hbox{\color{rgb_000000}\footnotesize $D$}}}
+\pgftext[at={\pgfpoint{1.49681in}{0.369137in}}] {\makebox(0,0)[b]{\hbox{\color{rgb_000000}\footnotesize $E$}}}
+\pgftext[at={\pgfpoint{0.244652in}{0.427674in}}] {\makebox(0,0)[b]{\hbox{\color{rgb_000000}\footnotesize $F$}}}
+\pgftext[at={\pgfpoint{0.019652in}{0.127674in}}] {\makebox(0,0)[b]{\hbox{\color{rgb_000000}\footnotesize $G$}}}
+\pgftext[at={\pgfpoint{1.16224in}{0.386295in}}] {\makebox(0,0)[b]{\hbox{\color{rgb_000000}\footnotesize $H$}}}
+\pgftext[at={\pgfpoint{1.13822in}{0.175183in}}] {\makebox(0,0)[t]{\hbox{\color{rgb_000000}\footnotesize $J$}}}
+\pgftext[at={\pgfpoint{1.49701in}{0.208175in}}] {\makebox(0,0)[t]{\hbox{\color{rgb_000000}\footnotesize $K$}}}
+\end{tikzpicture}

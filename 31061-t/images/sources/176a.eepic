@@ -1,0 +1,28 @@
+%% Generated from 176a.xp on Fri Jan  1 13:42:34 EST 2010 by
+%% ePiX-1.2.6
+%% 
+%%   Cartesian bounding box: [0,1.4] x [0,1]
+%%   Actual size: 3 x 0.375in
+%%   Figure offset: left by 0in, down by 0in
+%% 
+%% usepackages tikz
+%% 
+\xdefinecolor{rgb_000000}{rgb}{0,0,0}%
+\begin{tikzpicture}
+\pgfsetlinewidth{0.4pt}
+\useasboundingbox (0in,0in) rectangle (3in,0.375in);
+\draw (0in,0in)--(3in,0in);
+\draw (0in,0.375in)--(2.14286in,0.375in);
+\pgftext[at={\pgfpoint{0in}{0.458022in}}] {\makebox(0,0)[b]{\hbox{\color{rgb_000000}$A$}}}
+\pgftext[at={\pgfpoint{0in}{0.375in}}] {\makebox(0,0){\hbox{\color{rgb_000000}$\rule{0.5pt}{6pt}$}}}
+\pgftext[at={\pgfpoint{2.14286in}{0.458022in}}] {\makebox(0,0)[b]{\hbox{\color{rgb_000000}$B$}}}
+\pgftext[at={\pgfpoint{2.14286in}{0.375in}}] {\makebox(0,0){\hbox{\color{rgb_000000}$\rule{0.5pt}{6pt}$}}}
+\pgftext[at={\pgfpoint{0.857143in}{0.458022in}}] {\makebox(0,0)[b]{\hbox{\color{rgb_000000}$C$}}}
+\pgftext[at={\pgfpoint{0.857143in}{0.375in}}] {\makebox(0,0){\hbox{\color{rgb_000000}$\rule{0.5pt}{6pt}$}}}
+\pgftext[at={\pgfpoint{0in}{-0.083022in}}] {\makebox(0,0)[t]{\hbox{\color{rgb_000000}$D$}}}
+\pgftext[at={\pgfpoint{0in}{0in}}] {\makebox(0,0){\hbox{\color{rgb_000000}$\rule{0.5pt}{6pt}$}}}
+\pgftext[at={\pgfpoint{3in}{-0.083022in}}] {\makebox(0,0)[t]{\hbox{\color{rgb_000000}$E$}}}
+\pgftext[at={\pgfpoint{3in}{0in}}] {\makebox(0,0){\hbox{\color{rgb_000000}$\rule{0.5pt}{6pt}$}}}
+\pgftext[at={\pgfpoint{1.09463in}{-0.083022in}}] {\makebox(0,0)[t]{\hbox{\color{rgb_000000}$F$}}}
+\pgftext[at={\pgfpoint{1.09463in}{0in}}] {\makebox(0,0){\hbox{\color{rgb_000000}$\rule{0.5pt}{6pt}$}}}
+\end{tikzpicture}

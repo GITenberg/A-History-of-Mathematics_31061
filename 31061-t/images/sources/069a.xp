@@ -1,0 +1,47 @@
+/* -*-ePiX-*- */
+#include "epix.h"
+using namespace ePiX;
+
+int main()
+{
+  picture(P(0,0), P(2.25,1), "2.25 x 1in");
+
+  begin();
+  P ptA(0.75,1), ptB(0,0), ptC(1.8,0), ptD(2.25,0.3);
+  Segment AB(ptA, ptB), AC(ptA, ptC), BC(ptB, ptC);
+
+  P ptF(AB.midpoint(0.6)), ptG(AB.midpoint(0.9));
+  Segment DF(ptD, ptF), DG(ptD, ptG);
+
+  P ptE(AC*DF), ptK(AC*DG);
+  double t1(norm(ptD - ptE)/norm(ptD - ptF)), t2(t1/(1+t1));
+
+  P ptH((1-t2)*ptE + t2*ptF);
+
+  Segment AH(ptA,ptH);
+
+  P ptJ(DG*AH), ptL(BC*AH);
+
+  triangle(ptA, ptB, ptC);
+  line(ptD, ptF);
+  line(ptD, ptG);
+  line(ptA, ptL);
+
+  font_size("footnotesize");
+  label(ptA, P(0,4), "$A$", t);
+  label(ptB, P(-2,2), "$B$", l);
+  label(ptC, P( 2,2), "$C$", r);
+
+  label(ptD, P( 2,0), "$D$", r);
+  label(ptE, P( 4,2), "$E$", t);
+
+  label(ptF, P(-4,2), "$F$", t);
+  label(ptG, P(-4,2), "$G$", t);
+
+  label(ptH, P( 4,2), "$H$", t);
+  label(ptJ, P(-4,-2), "$J$", b);
+  label(ptK, P(-4,-2), "$K$", b);
+
+  tikz_format();
+  end();
+}

@@ -1,0 +1,43 @@
+%% Generated from 212a.xp on Wed Dec 30 22:33:53 EST 2009 by
+%% ePiX-1.2.6
+%% 
+%%   Cartesian bounding box: [-1,2] x [0,1.5]
+%%   Actual size: 2.5 x 1.5in
+%%   Figure offset: left by 0in, down by 0in
+%% 
+%% usepackages tikz
+%% 
+\xdefinecolor{rgb_000000}{rgb}{0,0,0}%
+\begin{tikzpicture}
+\pgfsetlinewidth{0.4pt}
+\useasboundingbox (0in,0in) rectangle (2.5in,1.5in);
+\draw (0.833333in,0in)--(0.834375in,0.0353553in)--
+  (0.8375in,0.0707107in)--(0.842708in,0.106066in)--
+  (0.85in,0.141421in)--(0.859375in,0.176777in)--
+  (0.870833in,0.212132in)--(0.884375in,0.247487in)--
+  (0.9in,0.282843in)--(0.917708in,0.318198in)--
+  (0.9375in,0.353553in)--(0.959375in,0.388909in)--
+  (0.983333in,0.424264in)--(1.00938in,0.459619in)--
+  (1.0375in,0.494975in)--(1.06771in,0.53033in)--(1.1in,0.565685in)--
+  (1.13438in,0.601041in)--(1.17083in,0.636396in)--
+  (1.20938in,0.671751in)--(1.25in,0.707107in)--
+  (1.29271in,0.742462in)--(1.3375in,0.777817in)--
+  (1.38437in,0.813173in)--(1.43333in,0.848528in)--
+  (1.48438in,0.883883in)--(1.5375in,0.919239in)--
+  (1.59271in,0.954594in)--(1.65in,0.989949in)--(1.70938in,1.0253in)--
+  (1.77083in,1.06066in)--(1.83438in,1.09602in)--(1.9in,1.13137in)--
+  (1.96771in,1.16673in)--(2.0375in,1.20208in)--
+  (2.10938in,1.23744in)--(2.18333in,1.27279in)--
+  (2.25938in,1.30815in)--(2.3375in,1.3435in)--(2.41771in,1.37886in)--(2.5in,1.41421in);
+\draw (1.66667in,0in)--(1.66667in,1in);
+\draw (2.03333in,0in)--(2.03333in,1.2in);
+\draw (2.03333in,1in)--(1.66667in,1in);
+\draw (0in,0in)--(2.5in,0in);
+\pgftext[at={\pgfpoint{0in}{-0.027674in}}] {\makebox(0,0)[t]{\hbox{\color{rgb_000000}\footnotesize $T$}}}
+\pgftext[at={\pgfpoint{1.66667in}{-0.027674in}}] {\makebox(0,0)[t]{\hbox{\color{rgb_000000}\footnotesize $P$}}}
+\pgftext[at={\pgfpoint{2.03333in}{-0.027674in}}] {\makebox(0,0)[t]{\hbox{\color{rgb_000000}\footnotesize $P'$}}}
+\pgftext[at={\pgfpoint{1.6136in}{1.03184in}}] {\makebox(0,0)[b]{\hbox{\color{rgb_000000}\footnotesize $B$}}}
+\pgftext[at={\pgfpoint{1.98027in}{1.23184in}}] {\makebox(0,0)[b]{\hbox{\color{rgb_000000}\footnotesize $B'$}}}
+\pgftext[at={\pgfpoint{2.06101in}{1in}}] {\makebox(0,0)[l]{\hbox{\color{rgb_000000}\footnotesize $A$}}}
+\draw (0in,0in)--(2.5in,1.5in);
+\end{tikzpicture}

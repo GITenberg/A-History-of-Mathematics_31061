@@ -1,0 +1,25 @@
+%% Generated from 111a.xp on Wed Dec 30 22:01:19 EST 2009 by
+%% ePiX-1.2.6
+%% 
+%%   Cartesian bounding box: [0,2.75] x [0,1]
+%%   Actual size: 2.0625 x 0.75in
+%%   Figure offset: left by 0in, down by 0in
+%% 
+%% usepackages tikz
+%% 
+\xdefinecolor{rgb_000000}{rgb}{0,0,0}%
+\begin{tikzpicture}
+\pgfsetlinewidth{0.4pt}
+\useasboundingbox (0in,0in) rectangle (2.0625in,0.75in);
+\draw (0in,0in)--(0.75in,0in)--(0.75in,0.75in)--(0in,0.75in)--(0in,0in)--cycle;
+\draw (0in,0in)--(0.565385in,0.323077in);
+\draw (0.75in,0in)--(0.426923in,0.565385in);
+\draw (0.75in,0.75in)--(0.184615in,0.426923in);
+\draw (0in,0.75in)--(0.323077in,0.184615in);
+\draw (1.03921in,0in)--(1.6904in,0in)--(1.6904in,0.372104in)--
+  (1.03921in,0.372104in)--(1.03921in,0in)--cycle;
+\draw (1.6904in,0in)--(2.0625in,0in)--(2.0625in,0.651182in)--
+  (1.6904in,0.651182in)--(1.6904in,0in)--cycle;
+\draw (1.41132in,0.372104in)--(1.6904in,0.372104in)--
+  (1.6904in,0.651182in)--(1.41132in,0.651182in)--(1.41132in,0.372104in)--cycle;
+\end{tikzpicture}

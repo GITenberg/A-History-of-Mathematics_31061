@@ -1,0 +1,41 @@
+/* -*-ePiX-*- */
+#include "epix.h"
+using namespace ePiX;
+
+P f(double y)
+{
+  return P(y*y, y);
+}
+
+int main()
+{
+  picture(P(-1,0), P(2,1.5), "2.5 x 1.5in");
+
+  begin();
+
+  double p1(1), p2(1.2);
+  P ptB1(f(p1)), ptB2(f(p2)), ptA(ptB2.x1(), ptB1.x2()), pT(-p1,0);
+
+  plot(f, 0, sqrt(2), 40);
+
+  line(P(p1*p1, 0), f(p1));
+  line(P(p2*p2, 0), f(p2));
+  line(ptA, ptB1);
+  line(xmin(), xmax());
+  font_size("footnotesize");
+
+  label(pT, P(0,-2), "$T$", b);
+  label(p1*p1, P(0,-2), "$P$", b);
+  label(p2*p2, P(0,-2), "$P'$", b);
+
+  label(ptB1, P(-4,2), "$B$", t);
+  label(ptB2, P(-4,2), "$B'$", t);
+
+  label(ptA, P(2,0), "$A$", r);
+
+  set_crop();
+  Line(pT, ptB1);
+
+  tikz_format();
+  end();
+}

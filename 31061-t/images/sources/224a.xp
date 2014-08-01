@@ -1,0 +1,77 @@
+/* -*-ePiX-*- */
+#include "epix.h"
+using namespace ePiX;
+
+const double mult(0.75);
+
+double f(double y)
+{
+  return y*(0.25 + mult*y*y);
+}
+
+P F(double y)
+{
+  return P(f(y), y);
+}
+
+double slope(double y)
+{
+  return 0.25 + 3*mult*y*y;
+}
+
+void ray(const P& tail, const P& head, double t)
+{
+  line(tail, tail + (1+t)*(head - tail));
+}
+
+const double XMAX(1.5);
+double g(double y) { return XMAX; }
+
+const double YMAX(newton(f, g, 1));
+
+int main()
+{
+  picture(P(-0.75,0), P(2,1.75), "3.75 x 2.25in");
+
+  begin();
+
+  double p1(0.8), p2(0.95*sqrt(XMAX)), dY(0.1);
+
+  P ptC(F(p1)), ptc(F(p2)), ptE(ptc.x1(), ptC.x2());
+  P ptB(f(p1), 0), ptb(f(p2), 0);
+
+  P ptV(ptC - ptC.x2()*P(slope(p1), 1)), ptK(F(YMAX+dY));
+
+  plot(F, 0, YMAX+dY, 40);
+
+  line(ptB, F(p1));
+  line(ptb, F(p2));
+  line(ptE, ptC);
+  line(ptC, ptc);
+
+  Segment bc(ptb, ptc), VC(ptV, ptC);
+
+  P ptT(bc*VC);
+  line(ptV, ptb);
+  ray(ptV, ptT, 0.1);
+
+  //font_size("footnotesize");
+
+  label(ptV, P(0,-4), "$V$", b);
+  label(ptB, P(0,-4), "$B$", b);
+  label(ptb, P(4,0), "$b$", r);
+  label(ptE, P(4,0), "$E$", r);
+
+  label(ptC, P(-4,1), "$C$", t);
+  label(ptc, P(4,7), "$c$", r);
+
+  label(ptV + 1.1*(ptT - ptV), P(2,0), "$H$", r);
+  label(ptK, P(0,2), "$K$", t);
+
+  label(F(0), P(0,-4), "$A$", b);
+  label(ptT, P(-3,2), "$T$", tl);
+  ray(ptb, ptT, 0.1);
+
+  tikz_format();
+  end();
+}
